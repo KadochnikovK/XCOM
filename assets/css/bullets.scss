@@ -1,0 +1,29 @@
+.bullets {
+    &__content {
+        padding-top: var(--padding-xl);
+        // padding-bottom: var(--padding-xl);
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--gap-lg);
+        padding-top: var(--padding-md);
+    }
+
+    &__item {
+        border-radius: var(--radius-lg);
+        border: 2px solid var(--color-blue-main);
+        padding: var(--padding-lg);
+        line-height: var(--lh-lg);
+
+        &--variant {
+            display: flex;
+            gap: var(--padding-md);
+            border: none;
+            border-radius: var(--radius-sm);
+            padding: var(--padding-md);
+            background-color: var(--color-grey-light);
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.collage {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.collage__bg {
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.collage__background {
+  position: relative;
+  margin-top: 40px;
+  z-index: 1;
+}
+
+.collage__computer {
+  position: absolute;
+  top: 0;
+  right: 100px;
+  max-width: 100%;
+}
+
+.collage__item {
+  position: absolute;
+  top: var(--top, 0);
+  left: var(--left, 0);
+  right: var(--right, auto);
+  bottom: var(--bottom, auto);
+  width: var(--width, auto);
+  height: var(--height, auto);
+  z-index: var(--z-idx, 0);
+}
+
+.collage__shadow {
+  position: absolute;
+  top: 80%;
+  left: 25%;
+  z-index: 1;
+  max-width: 100%;
+}
+
+.collage__comp {
+  position: relative;
+  z-index: 1;
+}

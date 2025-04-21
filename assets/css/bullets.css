@@ -1,0 +1,30 @@
+.bullets__content {
+  padding-top: var(--padding-xl);
+}
+
+.bullets__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: var(--gap-lg);
+  padding-top: var(--padding-md);
+}
+
+.bullets__item {
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--color-blue-main);
+  padding: var(--padding-lg);
+  line-height: var(--lh-lg);
+}
+
+.bullets__item--variant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: var(--padding-md);
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: var(--padding-md);
+  background-color: var(--color-grey-light);
+}

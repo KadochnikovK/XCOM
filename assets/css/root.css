@@ -1,0 +1,113 @@
+* {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+h1, h2, p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  line-height: 0;
+}
+
+.headline {
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  color: var(--color-blue-main);
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.headline::after {
+  content: '';
+  width: 70px;
+  height: 4px;
+  background-color: var(--color-orange);
+  position: absolute;
+  top: calc(100% + 20px);
+  left: 0;
+}
+
+.paragraph {
+  line-height: var(--lh-lg);
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content {
+  max-width: var(--max-size);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: var(--padding-base);
+}
+
+:root {
+  --color-blue-main: #005baa;
+  --color-blue-second: #1a7bbf;
+  --color-orange: #f27028;
+  --color-regular: #333;
+  --color-grey: #888;
+  --color-grey-light: #f6f6f6;
+  --color-white: #fff;
+  --gap-lg: 40px;
+  --gap-md: 20px;
+  --gap-sm: 10px;
+  --padding-xl: 80px;
+  --padding-lg: 40px;
+  --padding-md: 20px;
+  --padding-base: 10px 20px;
+  --radius-lg: 24px;
+  --radius-sm: 8px;
+  --fs-xl: 3rem;
+  --fs-lg: 2.25rem;
+  --fs-md: 2rem;
+  --fs-base: 1rem;
+  --fs-sm: 0.75rem;
+  --lh-lg: 2;
+  --max-size: 1440px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --fs-xl: 3rem;
+    --fs-lg: 2.25rem;
+    --fs-md: 2rem;
+    --fs-base: 1rem;
+    --fs-sm: 0.75rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --fs-xl: 4rem;
+    --fs-lg: 2.5rem;
+    --fs-md: 2.25rem;
+    --fs-base: 1.25rem;
+    --fs-sm: 1rem;
+  }
+}
+
+.orange {
+  color: var(--color-orange);
+}
