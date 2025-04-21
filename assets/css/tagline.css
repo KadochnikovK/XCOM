@@ -1,0 +1,20 @@
+.tagline {
+  background: url("./images/tagline-bg-1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: clamp(500px, 700px, 100vh);
+}
+
+.tagline__content {
+  height: 100%;
+  padding-top: var(--padding-xl);
+  padding-bottom: var(--padding-xl);
+}
+
+.tagline__text {
+  font-size: var(--fs-lg);
+  color: var(--color-white);
+  font-weight: 700;
+  text-align: center;
+}

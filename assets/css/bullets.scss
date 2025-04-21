@@ -1,19 +1,22 @@
 .bullets {
     &__content {
         padding-top: var(--padding-xl);
-        // padding-bottom: var(--padding-xl);
+
+        &--extra-padding {
+            padding-bottom: var(--padding-xl);
+        }
     }
 
     &__grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: var(--gap-lg);
-        padding-top: var(--padding-md);
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        gap: var(--gap-md) var(--gap-lg);
+        // padding-top: var(--padding-md);
     }
 
     &__item {
         border-radius: var(--radius-lg);
-        border: 2px solid var(--color-blue-main);
+        border: var(--border-h-md) solid var(--color-blue-main);
         padding: var(--padding-lg);
         line-height: var(--lh-lg);
 
@@ -24,6 +27,12 @@
             border-radius: var(--radius-sm);
             padding: var(--padding-md);
             background-color: var(--color-grey-light);
+            line-height: var(--lh-md);
         }
+    }
+
+    &__icon {
+        width: var(--fs-md);
+        height: var(--fs-md);
     }
 }

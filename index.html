@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./assets/css/animations/animations.css" />
     <link rel="stylesheet" href="./assets/style.css" />
     <title>Настольные компьютеры Aquarius от XCOM</title>
   </head>
   <body>
     <header class="header container">
-      <div class="content header__content">
+      <div class="header__content content">
         <div class="header__item">
           <a href="#" class="logo">
             <img class="logo__img" src="./assets/images/logo.svg" alt="XCOM" />
@@ -33,8 +33,8 @@
       </div>
     </header>
     <main class="main">
-      <div class="offer container">
-        <div class="content offer__content">
+      <div class="offer offer--main container">
+        <div class="offer__content content">
           <div class="offer__text">
             <h1 class="offer__headline animate__fadeInLeft animate__animated" style="--animate-duration: 0.5s">Работайте <span class="orange">быстрее</span> и <span class="orange">эффективнее</span></h1>
             <p class="offer__papagraph paragraph animate__fadeInLeft animate__animated animate__delay-2s" style="--animate-duration: 0.5s; --animate-delay: 0.3s">Настольные компьютеры Aquarius представляют собой высокопроизводительные устройства, предназначенные как для домашних пользователей, так и специалистов</p>
@@ -66,15 +66,85 @@
         </div>
       </div>
       <div class="bullets container">
-        <div class="bullets__content content">
+        <div class="bullets__content bullets__content--extra-padding content">
           <h2 class="headline">Решаемые задачи</h2>
           <div class="bullets__grid">
-            <div class="bullets__item bullets__item--variant"><img src="assets/images/check.svg" alt="✔">Для экономии рабочего пространства</div>
-            <div class="bullets__item bullets__item--variant"><img src="assets/images/check.svg" alt="✔">Для офисных сотрудников</div>
-            <div class="bullets__item bullets__item--variant"><img src="assets/images/check.svg" alt="✔">Для безопасных вычислений</div>
-            <div class="bullets__item bullets__item--variant"><img src="assets/images/check.svg" alt="✔">Для государственных служащих</div>
-            <div class="bullets__item bullets__item--variant"><img src="assets/images/check.svg" alt="✔">Для офисных Для удаленного доступа к инфраструктуре VDI</div>
-            <div class="bullets__item bullets__item--variant"><img src="assets/images/check.svg" alt="✔">Для удаленного доступа к терминальной инфраструктуре</div>
+            <div class="bullets__item bullets__item--variant"><img class="bullets__icon" src="assets/images/check.svg" alt="✔" />Для экономии рабочего пространства</div>
+            <div class="bullets__item bullets__item--variant"><img class="bullets__icon" src="assets/images/check.svg" alt="✔" />Для офисных сотрудников</div>
+            <div class="bullets__item bullets__item--variant"><img class="bullets__icon" src="assets/images/check.svg" alt="✔" />Для безопасных вычислений</div>
+            <div class="bullets__item bullets__item--variant"><img class="bullets__icon" src="assets/images/check.svg" alt="✔" />Для государственных служащих</div>
+            <div class="bullets__item bullets__item--variant"><img class="bullets__icon" src="assets/images/check.svg" alt="✔" />Для офисных Для удаленного доступа к инфраструктуре VDI</div>
+            <div class="bullets__item bullets__item--variant"><img class="bullets__icon" src="assets/images/check.svg" alt="✔" />Для удаленного доступа к терминальной инфраструктуре</div>
+          </div>
+        </div>
+      </div>
+      <div class="tagline container">
+        <div class="tagline__content content">
+          <p class="tagline__text"><span class="poligon-bg">ГК XCOM</span> — лидер в поставках и интеграции IT&#8209;решений</p>
+        </div>
+      </div>
+      <div class="offer container">
+        <div class="offer__content content">
+          <div class="offer__text">
+            <h2 class="headline">Почему выбирают Aquarius?</h2>
+            <p class="offer__papagraph paragraph"><img src="./assets/images/microchip.svg" alt="✔" />Современные компоненты</p>
+            <p class="offer__papagraph paragraph"><img src="./assets/images/web.svg" alt="✔" />Индивидуальный подход</p>
+            <p class="offer__papagraph paragraph"><img src="./assets/images/bolt.svg" alt="✔" />Эстетика и функциональность</p>
+            <p class="offer__papagraph paragraph"><img src="./assets/images/shield.svg" alt="✔" />Поддержка и гарантии</p>
+          </div>
+          <div class="offer__image">
+            <div class="collage">
+              <div class="collage__bg">
+                <!-- не удалять -->
+              </div>
+              <div class="collage__computer">
+                <img class="collage__item animate__fadeInUp animate__animated animate__delay-2s" style="--animate-duration: 0.2s; --animate-delay: 0.3s; --width: 200px; --height: auto; --top: 55%; --left: 5%; z-index: 0" src="./assets/images/item.svg" alt="item" />
+                <img class="collage__item animate__fadeInUp animate__animated animate__delay-2s" style="--animate-duration: 0.2s; --animate-delay: 0.4s; --width: auto; --height: auto; --top: 15%; --left: 70%; z-index: 2" src="./assets/images/item.svg" alt="item" />
+                <img class="collage__comp animate__fadeInUp animate__animated animate__delay-2s" style="--animate-duration: 0.3s; --animate-delay: 0.2s" src="./assets/images/computer.png" alt="comp" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="goods container">
+        <div class="goods__content content">
+          <div class="goods__grid">
+            <div class="goods__item">
+              <div class="goods__header">
+                <img class="goods__image" src="assets/images/pc1.png" alt="" />
+                <p class="goods__headline headline">Настольные компьютеры</p>
+              </div>
+              <p class="goods__text">
+                Просторный корпус 36 л — подходит для топовых CPU и видеокарт<br />
+                До 3 цифровых видеовыходов (HDMI + DisplayPort)<br />
+                Возможность установить дополнительный M.2 SSD<br />
+                Совместимость с процессорами Intel Core 14-го поколения и памятью DDR5
+              </p>
+            </div>
+            <div class="goods__item">
+              <div class="goods__header">
+                <img class="goods__image" src="assets/images/pc2.png" alt="" />
+                <p class="goods__headline headline">Настольные компьютеры</p>
+              </div>
+              <p class="goods__text">
+                Просторный корпус 36 л — подходит для топовых CPU и видеокарт<br />
+                До 3 цифровых видеовыходов (HDMI + DisplayPort)<br />
+                Возможность установить дополнительный M.2 SSD<br />
+                Совместимость с процессорами Intel Core 14-го поколения и памятью DDR5
+              </p>
+            </div>
+            <div class="goods__item">
+              <div class="goods__header">
+                <img class="goods__image" src="assets/images/pc3.png" alt="" />
+                <p class="goods__headline headline">Настольные компьютеры</p>
+              </div>
+              <p class="goods__text">
+                Просторный корпус 36 л — подходит для топовых CPU и видеокарт<br />
+                До 3 цифровых видеовыходов (HDMI + DisplayPort)<br />
+                Возможность установить дополнительный M.2 SSD<br />
+                Совместимость с процессорами Intel Core 14-го поколения и памятью DDR5
+              </p>
+            </div>
           </div>
         </div>
       </div>

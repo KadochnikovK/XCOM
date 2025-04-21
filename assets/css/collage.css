@@ -13,6 +13,7 @@
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  min-height: 400px;
 }
 
 .collage__background {

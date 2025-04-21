@@ -1,5 +1,5 @@
 .header {
-    border-bottom: 2px solid var(--color-blue-main); 
+    border-bottom: var(--border-h-md) solid var(--color-blue-main); 
 
     &__content {
         gap: var(--gap-md);
