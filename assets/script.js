@@ -171,4 +171,16 @@ document.addEventListener("DOMContentLoaded", function () {
   
     resizeObserver.observe(header);
   }
+
+  const currentYear = new Date().getFullYear();
+    
+   
+    const copyrightText = `© 2018–${currentYear} X-Com. Все права защищены.`;
+    
+    const copyElement = document.getElementById('copy');
+    if (copyElement) {
+        copyElement.textContent = copyrightText;
+    } else {
+        console.warn('Элемент с id "copy" не найден на странице');
+    }
 });

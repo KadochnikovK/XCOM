@@ -79,7 +79,7 @@
         }
     }
 
-    // Гамбургер-меню
+
     &__hamburger {
         display: flex;
         flex-direction: column;
@@ -112,7 +112,7 @@
         }
     }
 
-    // Десктопная версия
+
     @media (min-width: 1024px) {
         &__button {
             font-size: var(--fs-sx);
@@ -157,12 +157,8 @@
 
     @media (max-width: 767px) {
         &__button {
-            padding: 0.5rem;
-            font-size: 0;
-
-            img {
-                margin-right: 0;
-            }
+            font-size: var(--fs-xs) !important;
         }
+   
     }
 }

@@ -15,7 +15,6 @@
         &--sm {
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         }
-        // padding-top: var(--padding-md);
 
         @media (max-width: 1023px) {
             grid-template-columns: 1fr;
@@ -27,7 +26,6 @@
         border-radius: var(--radius-lg);
         border: var(--border-h-md) solid var(--color-blue-main);
         padding: var(--padding-lg);
-        // font-size: var(--fs-base);
         font-size: var(--fs-sm);
         line-height: var(--lh-md);
 

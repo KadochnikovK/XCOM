@@ -1,6 +1,15 @@
 * {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   color: var(--color-regular);
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#offer:target {
+  scroll-margin-top: 200px;
 }
 
 h1,
@@ -89,6 +98,10 @@ a {
   color: var(--color-regular);
 }
 
+.note--left {
+  text-align: left;
+}
+
 .poligon {
   position: absolute;
   left: var(--left, auto);
@@ -154,6 +167,17 @@ a {
           transform: translateX(-50%);
 }
 
+@media (max-width: 1023px) {
+  .headline {
+    text-align: center;
+  }
+  .headline::after {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
 .paragraph {
   line-height: var(--lh-lg);
   font-size: var(--fs-sm);
@@ -193,6 +217,7 @@ a {
   --color-grey: #888;
   --color-grey-light: #f6f6f6;
   --color-white: #fff;
+  --gap-xl: 80px;
   --gap-lg: 40px;
   --gap-md: 20px;
   --gap-sm: 10px;

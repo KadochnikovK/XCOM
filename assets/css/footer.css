@@ -2,6 +2,10 @@
   border-top: var(--border-h-md) solid var(--color-regular);
   background-color: var(--color-white);
   padding: var(--padding-lg);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .footer__content {

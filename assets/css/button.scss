@@ -45,6 +45,10 @@
   &:focus:not(:active)::after {
     animation: ripple 0.6s ease-out forwards;
   }
+
+  @media (max-width: 1023px) {
+    font-size: var(--fs-sm);
+  }
 }
 
 @keyframes ripple {

@@ -1,6 +1,15 @@
 * {
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
     color: var(--color-regular);
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#offer:target {
+    scroll-margin-top: 200px;
 }
 
 h1,
@@ -73,6 +82,9 @@ a {
     &--main {
         color: var(--color-regular);
     }
+    &--left {
+        text-align: left;
+    }
 }
 
 .poligon {
@@ -83,7 +95,7 @@ a {
     height: var(--height, auto);
     z-index: 0;
 
-    @media(max-width: 767px) {
+    @media (max-width: 767px) {
         display: none;
     }
 }
@@ -133,6 +145,15 @@ a {
         left: 50%;
         transform: translateX(-50%);
     }
+
+    @media (max-width: 1023px) {
+
+        text-align: center;
+        &::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
 }
 
 .paragraph {
@@ -178,6 +199,7 @@ $breakpoints: (
     --color-white: #fff;
 
     // гэп
+    --gap-xl: 80px;
     --gap-lg: 40px;
     --gap-md: 20px;
     --gap-sm: 10px;
