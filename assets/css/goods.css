@@ -20,6 +20,12 @@
   height: 2px;
 }
 
+@media (max-width: 1023px) {
+  .goods__headline {
+    font-size: var(--fs-md);
+  }
+}
+
 .goods__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28,6 +34,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
   padding: var(--padding-lg);
   border-radius: var(--radius-sm);
   border: var(--border-h-md) solid var(--color-grey-light);
