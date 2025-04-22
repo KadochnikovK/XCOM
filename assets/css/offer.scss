@@ -39,6 +39,10 @@
         font-size: var(--fs-base);
         color: var(--color-regular);
         order: 3;
+
+        @media (max-width: 767px) {
+            font-size: var(--fs-sm);
+        }
     }
 
     &__image {

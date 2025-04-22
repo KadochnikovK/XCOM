@@ -17,15 +17,16 @@
 
     &__item {
         display: flex;
-        align-items: flex-start; 
+        align-items: center; 
         gap: var(--gap-lg);
         flex-wrap: wrap; 
-
+        flex-direction: row;
+        justify-content: space-between; 
        
         &:first-child {
             @media (max-width: 767px) {
                 width: 100%;
-                justify-content: space-between; 
+                
             }
         }
     }
@@ -56,5 +57,12 @@
 
     &__button {
         font-size: var(--fs-sm);
+
+        @media (max-width: 767px) {
+            font-size: var(--fs-xs);
+            & img {
+                width: 18px;
+            }
+        }
     }
 }

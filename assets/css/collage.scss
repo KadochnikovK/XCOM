@@ -45,4 +45,37 @@
         position: relative;
         z-index: 1;
     }
+
+    &--mobile {
+        display: none !important;
+    }
+
+    @media (max-width: 1023px) {
+        &--full {
+            display: none !important
+        }
+
+        &--mobile {
+            display: flex !important;
+
+            & .collage__bg {
+                transform: translateX(50%);
+                left: -50%;
+            }
+
+            & .collage__computer {
+                right: 50%;
+                transform: translateX(50%);
+            }
+
+           
+        }
+    }
+
+    @media (max-width: 500px) {
+        & .collage__comp {
+                right: 20%;
+        }
+    }
+
 }
