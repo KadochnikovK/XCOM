@@ -19,12 +19,13 @@
     }
 
     &__item {
-        font-size: var(--fs-base);
+        
         border-radius: var(--radius-lg);
         border: var(--border-h-md) solid var(--color-blue-main);
         padding: var(--padding-lg);
+        // font-size: var(--fs-base);
         font-size: var(--fs-sm);
-        // line-height: var(--lh-md);
+        line-height: var(--lh-md);
 
         &--sm {
             font-size: var(--fs-sm);

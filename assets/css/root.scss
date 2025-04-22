@@ -1,5 +1,6 @@
 * {
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    color: var(--color-regular);
 }
 
 h1,h2,p {
@@ -12,13 +13,80 @@ a {
     text-decoration: none;
 }
 
+.flex {
+    display: flex;
+    gap: var(--gap-md);
+}
+
+.link {
+    display: inline-flex;
+    gap: var(--gap-sm);
+    font-size: var(--fs-base);
+    align-items: center;
+    color: var(--color-blue-main);
+}
+
 .logo {
     line-height: 0;
+}
+
+.margin-top-sm{
+    margin-top: 80px;
+}
+
+.margin-top-md{
+    margin-top: 160px;
+}
+
+.margin-top-lg {
+    margin-top: 240px;
+}
+
+.margin-bottom-sm {
+    margin-bottom: 80px;
+}
+
+.margin-bottom-md{
+    margin-bottom: 160px;
+}
+
+.margin-bottom-lg {
+    margin-bottom: 240px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: var(--gap-lg);
+    align-items: center;
+    transform: translateY(var(--translate-y, 0));
+
+}
+
+.note {
+    text-align: center;
+    font-size: var(--fs-xs);
+    color: var(--color-grey);
+
+    &--main {
+        color: var(--color-regular);
+    }
+}
+
+.poligon {
+    position: absolute;
+    left: var(--left, auto);
+    top: var(--top, auto);
+    width: var(--width, auto);
+    height: var(--height, auto);
+    z-index: 0;
 }
 
 .poligon-bg {
     position: relative;
     z-index: 0;
+    color: var(--color-white);
 
     &::before {
         content: '';
@@ -41,6 +109,10 @@ a {
     position: relative;
     margin-bottom: 60px;
     
+    &--margin-sm {
+        margin-bottom: 30px;
+    }
+
     &::after {
         content: '';
         width: 70px;
@@ -51,10 +123,16 @@ a {
         left: 0;
 
     }
+
+    &--center::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 .paragraph {
     line-height: var(--lh-lg);
+    font-size: var(--fs-sm);
 }
 
 
@@ -104,6 +182,7 @@ $breakpoints: (
     --padding-lg: 40px;
     --padding-md: 20px;
     --padding-base: 10px 20px;
+    --padding-sm: 10px;
 
     // радиус
     --radius-lg: 24px;

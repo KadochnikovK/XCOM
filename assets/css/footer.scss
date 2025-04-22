@@ -1,10 +1,7 @@
-.header {
-    border-bottom: var(--border-h-md) solid var(--color-blue-main); 
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: 9;
+.footer {
+    border-top: var(--border-h-md) solid var(--color-regular);
     background-color: var(--color-white);
+    padding: var(--padding-md);
 
     &__content {
         gap: var(--gap-md);
