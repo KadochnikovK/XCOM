@@ -6,7 +6,7 @@
     &__bg {
         position: relative;
         width: max-content;
-        min-height: 400px; 
+        min-height: 400px;
         min-width: 650px;
     }
 
@@ -41,6 +41,7 @@
         z-index: 1;
         max-width: 100%;
     }
+
     &__comp {
         position: relative;
         z-index: 1;
@@ -68,13 +69,15 @@
                 transform: translateX(50%);
             }
 
-           
+
         }
     }
 
     @media (max-width: 500px) {
-        & .collage__comp {
+        &--mobile {
+            & .collage__comp {
                 right: 20%;
+            }
         }
     }
 
