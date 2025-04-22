@@ -49,9 +49,6 @@ document.addEventListener("DOMContentLoaded", function () {
       const errorElement = document.createElement("div");
       errorElement.className = "error-message";
       errorElement.textContent = message;
-      errorElement.style.color = "red";
-      errorElement.style.fontSize = "12px";
-      errorElement.style.marginTop = "5px";
       formItem.appendChild(errorElement);
     }
   }
