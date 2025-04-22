@@ -1,7 +1,7 @@
 .footer {
   border-top: var(--border-h-md) solid var(--color-regular);
   background-color: var(--color-white);
-  padding: var(--padding-md);
+  padding: var(--padding-lg);
 }
 
 .footer__content {
@@ -16,9 +16,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: var(--gap-lg);
 }
 
@@ -27,6 +27,8 @@
   display: -ms-flexbox;
   display: flex;
   gap: var(--gap-md);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer__link {

@@ -3,11 +3,12 @@
     color: var(--color-regular);
 }
 
-h1,h2,p {
+h1,
+h2,
+p {
     padding: 0;
     margin: 0;
 }
-
 
 a {
     text-decoration: none;
@@ -30,11 +31,11 @@ a {
     line-height: 0;
 }
 
-.margin-top-sm{
+.margin-top-sm {
     margin-top: 80px;
 }
 
-.margin-top-md{
+.margin-top-md {
     margin-top: 160px;
 }
 
@@ -46,7 +47,7 @@ a {
     margin-bottom: 80px;
 }
 
-.margin-bottom-md{
+.margin-bottom-md {
     margin-bottom: 160px;
 }
 
@@ -58,10 +59,10 @@ a {
     display: flex;
     flex-direction: column;
     position: relative;
+    width: clamp(360px, 100%, 500px);
     gap: var(--gap-lg);
     align-items: center;
     transform: translateY(var(--translate-y, 0));
-
 }
 
 .note {
@@ -89,8 +90,8 @@ a {
     color: var(--color-white);
 
     &::before {
-        content: '';
-        position:absolute;
+        content: "";
+        position: absolute;
         top: -5%;
         left: -5%;
         right: -5%;
@@ -108,23 +109,23 @@ a {
     color: var(--color-blue-main);
     position: relative;
     margin-bottom: 60px;
-    
+
     &--margin-sm {
         margin-bottom: 30px;
     }
 
     &::after {
-        content: '';
+        content: "";
         width: 70px;
         height: 4px;
         background-color: var(--color-orange);
         position: absolute;
         top: calc(100% + 20px);
         left: 0;
-
     }
 
     &--center::after {
+        text-align: center;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -134,7 +135,6 @@ a {
     line-height: var(--lh-lg);
     font-size: var(--fs-sm);
 }
-
 
 .container {
     display: flex;
@@ -167,6 +167,7 @@ $breakpoints: (
     --color-blue-main: #005baa;
     --color-blue-second: #1a7bbf;
     --color-orange: #f27028;
+    --color-orange-second: #f59324;
     --color-regular: #333;
     --color-grey: #888;
     --color-grey-light: #f6f6f6;
@@ -206,7 +207,6 @@ $breakpoints: (
     // бордер
     --border-h-lg: 4px;
     --border-h-md: 2px;
-
 }
 
 @include respond-to("md") {

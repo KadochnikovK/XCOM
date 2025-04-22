@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/plugins/swiper/swiper.css" />
     <link rel="stylesheet" href="./assets/css/animations/animations.css" />
     <link rel="stylesheet" href="./assets/style.css" />
+
+    <script src="./assets/plugins/swiper/swiper.js"></script>
     <title>Настольные компьютеры Aquarius от XCOM</title>
   </head>
 
@@ -30,6 +33,13 @@
             <img src="./assets/images/phone.svg" alt="" />
             +7&nbsp;(495)&nbsp;260&nbsp;58&nbsp;61
           </a>
+        </div>
+        <div class="header__item">
+          <div class="header__hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
     </header>
@@ -108,38 +118,44 @@
         </div>
       </div>
       <div class="goods container">
-        <div class="goods__content content">
-          <div class="goods__grid">
-            <div class="goods__item">
-              <div class="goods__header">
-                <img class="goods__image" src="assets/images/pc1.png" alt="" />
-                <p class="goods__headline headline">Настольные компьютеры</p>
+        <div class="goods__content content swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="goods__item">
+                <div class="goods__header">
+                  <img class="goods__image" src="assets/images/pc1.png" alt="" />
+                  <p class="goods__headline headline">Настольные компьютеры</p>
+                </div>
+                <p class="goods__text">Просторный корпус 36 л — подходит для топовых CPU и видеокарт.</p>
+                <p class="goods__text">До 3 цифровых видеовыходов (HDMI + DisplayPort).</p>
+                <p class="goods__text">Возможность установить дополнительный M.2 SSD.</p>
+                <p class="goods__text">Совместимость с процессорами Intel Core 14-го поколения и памятью DDR5.</p>
               </div>
-              <p class="goods__text">Просторный корпус 36 л — подходит для топовых CPU и видеокарт.</p>
-              <p class="goods__text">До 3 цифровых видеовыходов (HDMI + DisplayPort).</p>
-              <p class="goods__text">Возможность установить дополнительный M.2 SSD.</p>
-              <p class="goods__text">Совместимость с процессорами Intel Core 14-го поколения и памятью DDR5.</p>
             </div>
-            <div class="goods__item">
-              <div class="goods__header">
-                <img class="goods__image" src="assets/images/pc2.png" alt="" />
-                <p class="goods__headline headline">Компактные компьютеры</p>
+            <div class="swiper-slide">
+              <div class="goods__item">
+                <div class="goods__header">
+                  <img class="goods__image" src="assets/images/pc2.png" alt="" />
+                  <p class="goods__headline headline">Компактные компьютеры</p>
+                </div>
+                <p class="goods__text">Компактный форм-фактор с креплением VESA.</p>
+                <p class="goods__text">Совместимость с процессорами Intel Core 14-го поколения.</p>
+                <p class="goods__text">Mobile Rack 2.5" на лицевой панели.</p>
+                <p class="goods__text">Может использоваться с данными, составляющими государственную тайну.</p>
+                <p class="goods__text">Отечественные ОС и поддержка российского BIOS.</p>
               </div>
-              <p class="goods__text">Компактный форм-фактор с креплением VESA.</p>
-              <p class="goods__text">Совместимость с процессорами Intel Core 14-го поколения.</p>
-              <p class="goods__text">Mobile Rack 2.5" на лицевой панели.</p>
-              <p class="goods__text">Может использоваться с данными, составляющими государственную тайну.</p>
-              <p class="goods__text">Отечественные ОС и поддержка российского BIOS.</p>
             </div>
-            <div class="goods__item">
-              <div class="goods__header">
-                <img class="goods__image" src="assets/images/pc3.png" alt="" />
-                <p class="goods__headline headline">Рабочие станции</p>
+            <div class="swiper-slide">
+              <div class="goods__item">
+                <div class="goods__header">
+                  <img class="goods__image" src="assets/images/pc3.png" alt="" />
+                  <p class="goods__headline headline">Рабочие станции</p>
+                </div>
+                <p class="goods__text">Подходит для 3D-графики, CAD-систем, финансового моделирования</p>
+                <p class="goods__text">Возможность установки дискретных GPU высокого уровня</p>
+                <p class="goods__text">Пространство и интерфейсы для подключения нескольких накопителей</p>
+                <p class="goods__text">Разработана специально для специалистов, работающих с тяжёлыми задачами и сложными расчётами.</p>
               </div>
-              <p class="goods__text">Подходит для 3D-графики, CAD-систем, финансового моделирования</p>
-              <p class="goods__text">Возможность установки дискретных GPU высокого уровня</p>
-              <p class="goods__text">Пространство и интерфейсы для подключения нескольких накопителей</p>
-              <p class="goods__text">Разработана специально для специалистов, работающих с тяжёлыми задачами и сложными расчётами.</p>
             </div>
           </div>
         </div>
@@ -195,10 +211,10 @@
       <div class="block margin-top-lg container" style="--img-url: url('./images/block-bg-1.png')">
         <div class="block__content content" style="--height: 500px">
           <div class="wrapper" style="--translate-y: -25%">
-            <img class="poligon" style="--top: 80%; --left: -25%; --width: 200px; --height: auto;" src="./assets/images/item.svg" alt="" />
-            <img class="poligon" style="--top: 8%; --left: 90%; --width: 130px; --height: auto;" src="./assets/images/item.svg" alt="" />
+            <img class="poligon" style="--top: 80%; --left: -25%; --width: 200px; --height: auto" src="./assets/images/item.svg" alt="" />
+            <img class="poligon" style="--top: 8%; --left: 90%; --width: 130px; --height: auto" src="./assets/images/item.svg" alt="" />
             <h2 class="headline headline--center">Заполните форму</h2>
-            <form class="form" action="#">
+            <form class="form" id="main-form" action="#">
               <div class="form__item">
                 <label for="company" class="form__label">Название компании</label>
                 <input type="text" class="form__input" placeholder=" " name="company" />
@@ -258,13 +274,11 @@
             <h2 class="headline headline--margin-sm headline--center">Остались вопросы?</h2>
             <p class="note">Свяжитесь с нами</p>
             <div class="flex">
-              <a href="#"> <img src="./assets/images/tg.svg" alt="tg" /> </a>
-              <a href="#"><img src="./assets/images/wa.svg" alt="wa" /></a>
+              <a href="https://t.me/+79850117765" target="_blank"> <img src="./assets/images/tg.svg" alt="tg" /> </a>
+              <a href="https://wa.me/79850117765" target="_blank"><img src="./assets/images/wa.svg" alt="wa" /></a>
             </div>
             <div class="flex">
-              <a href="mailto:order@xcom.ru" class="link">
-                <img src="./assets/images/mail.svg" alt="tg" />order@xcom.ru
-              </a>
+              <a href="mailto:order@xcom.ru" class="link"> <img src="./assets/images/mail.svg" alt="tg" />order@xcom.ru </a>
             </div>
             <p class="note note--main">
               Офис на Кронштадтском бульваре<br />
@@ -281,22 +295,25 @@
             <img class="logo__img" src="./assets/images/logo.svg" alt="XCOM" />
           </a>
           <nav class="footer__menu">
+            <a href="#" class="footer__link">ПК Aquarius</a>
+            <a href="#" class="footer__link">О компьютерах Aquarius</a>
             <a href="#" class="footer__link">Решаемые задачи</a>
-            <a href="#" class="footer__link">Почему Aquarius?</a>
+            <a href="#" class="footer__link">Почему выбирают Aquarius?</a>
             <a href="#" class="footer__link">Выберите своё решение</a>
-            <a href="#" class="footer__link">Контакты</a>
-            <a href="#" class="footer__link footer__link--main">Оставить заявку</a>
+            <a href="#" class="footer__link">Кому подойдут эти решения</a>
+            <a href="#" class="footer__link">О нас</a>
           </nav>
         </div>
 
         <div class="footer__item">
-          <a href="tel:+74952605861" class="footer__button button button--main">
-            <img src="./assets/images/phone.svg" alt="" />
-            +7&nbsp;(495)&nbsp;260&nbsp;58&nbsp;61
+          <a href="" class="footer__button button button--main">
+            <img src="./assets/images/send.svg" alt="" />
+            Оставить&nbsp;заявку
           </a>
         </div>
       </div>
     </footer>
+
     <script src="./assets/script.js"></script>
   </body>
 </html>

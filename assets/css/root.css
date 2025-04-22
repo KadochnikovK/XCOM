@@ -3,7 +3,9 @@
   color: var(--color-regular);
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
   padding: 0;
   margin: 0;
 }
@@ -68,6 +70,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  width: clamp(360px, 100%, 500px);
   gap: var(--gap-lg);
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -102,7 +105,7 @@ a {
 }
 
 .poligon-bg::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -5%;
   left: -5%;
@@ -129,7 +132,7 @@ a {
 }
 
 .headline::after {
-  content: '';
+  content: "";
   width: 70px;
   height: 4px;
   background-color: var(--color-orange);
@@ -139,6 +142,7 @@ a {
 }
 
 .headline--center::after {
+  text-align: center;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -178,6 +182,7 @@ a {
   --color-blue-main: #005baa;
   --color-blue-second: #1a7bbf;
   --color-orange: #f27028;
+  --color-orange-second: #f59324;
   --color-regular: #333;
   --color-grey: #888;
   --color-grey-light: #f6f6f6;

@@ -5,7 +5,9 @@
     min-height: 50vh;
 
     &--main {
-        height: 70vh;
+        min-height: 70vh;
+        padding-top: var(--padding-lg);
+        padding-bottom: var(--padding-lg);
     }
 
     &--without-bg {
