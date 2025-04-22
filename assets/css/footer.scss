@@ -4,20 +4,39 @@
     padding: var(--padding-lg);
 
     &__content {
+        display: flex;
+        flex-direction: column; // На мобильных — колонка
         gap: var(--gap-md);
-        flex-direction: row;
+
+        @media (min-width: 768px) {
+            flex-direction: row; // На десктопе — ряд
+        }
     }
 
     &__item {
         display: flex;
-        align-items: flex-start;
+        align-items: flex-start; // Лого и кнопка по центру
         gap: var(--gap-lg);
+        flex-wrap: wrap; // Если не помещается — перенос
+
+        // Первая строка (лого + кнопка) на мобильных
+        &:first-child {
+            @media (max-width: 767px) {
+                width: 100%;
+                justify-content: space-between; // Лого слева, кнопка справа
+            }
+        }
     }
 
     &__menu {
         display: flex;
         gap: var(--gap-md);
         flex-wrap: wrap;
+
+        @media (max-width: 767px) {
+            width: 100%; // Меню на всю ширину
+            order: 1; // Перемещаем меню вниз
+        }
     }
 
     &__link {
@@ -26,11 +45,11 @@
         text-align: center;
         display: flex;
         align-items: center;
-    }
 
-    &__link--main {
-        color: var(--color-orange);
-        font-weight: 600;
+        &--main {
+            color: var(--color-orange);
+            font-weight: 600;
+        }
     }
 
     &__button {

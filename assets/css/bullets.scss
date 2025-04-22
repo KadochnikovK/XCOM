@@ -9,13 +9,17 @@
 
     &__grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
         gap: var(--gap-md) var(--gap-lg);
 
         &--sm {
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         }
         // padding-top: var(--padding-md);
+
+        @media (max-width: 1023px) {
+            grid-template-columns: 1fr;
+        }
     }
 
     &__item {

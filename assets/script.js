@@ -159,27 +159,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  function updateMainMargin() {
-    const header = document.querySelector('header');
-    const main = document.querySelector('main');
-    
-    if (header && main) {
-      const headerHeight = header.offsetHeight;
-      main.style.marginTop = `${headerHeight}px`;
-    }
-  }
+  const header = document.querySelector('header');
+  const main = document.querySelector('main');
   
-  window.addEventListener('load', updateMainMargin);
-  window.addEventListener('resize', updateMainMargin);
-  
-  
-  const observer = new MutationObserver(updateMainMargin);
-  if (document.getElementById('header')) {
-    observer.observe(document.getElementById('header'), {
-      childList: true,
-      subtree: true,
-      attributes: true,
-      characterData: true
+  if (header && main) {
+    const resizeObserver = new ResizeObserver(entries => {
+      for (let entry of entries) {
+        main.style.marginTop = `${entry.target.offsetHeight}px`;
+      }
     });
+  
+    resizeObserver.observe(header);
   }
 });

@@ -98,6 +98,12 @@ a {
   z-index: 0;
 }
 
+@media (max-width: 767px) {
+  .poligon {
+    display: none;
+  }
+}
+
 .poligon-bg {
   position: relative;
   z-index: 0;

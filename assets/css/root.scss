@@ -82,6 +82,10 @@ a {
     width: var(--width, auto);
     height: var(--height, auto);
     z-index: 0;
+
+    @media(max-width: 767px) {
+        display: none;
+    }
 }
 
 .poligon-bg {
