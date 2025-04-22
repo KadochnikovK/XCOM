@@ -1300,6 +1300,7 @@ a {
 .footer {
   border-top: var(--border-h-md) solid var(--color-regular);
   background-color: var(--color-white);
+  padding-top: var(--padding-lg);
   scroll-padding-bottom: var(--padding-lg);
 }
 
