@@ -396,7 +396,7 @@ a {
 }
 
 .content {
-  max-width: var(--max-size);
+  max-width: var(--max-size) !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1293,11 +1293,8 @@ a {
 .footer {
   border-top: var(--border-h-md) solid var(--color-regular);
   background-color: var(--color-white);
-  padding: var(--padding-lg);
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  padding-top: var(--padding-lg);
+  scroll-padding-bottom: var(--padding-lg);
 }
 
 .footer__content {

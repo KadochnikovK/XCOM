@@ -193,7 +193,7 @@ a {
 }
 
 .content {
-  max-width: var(--max-size);
+  max-width: var(--max-size) !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

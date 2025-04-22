@@ -167,7 +167,7 @@ a {
 }
 
 .content {
-    max-width: var(--max-size);
+    max-width: var(--max-size) !important;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
