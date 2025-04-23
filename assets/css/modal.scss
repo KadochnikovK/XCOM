@@ -53,19 +53,22 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: var(--gap-md);
+        gap: var(--gap-lg);
         color: var(--color-regular);
         text-align: center;
+      
     }
 
     &__headline {
         font-size: var(--fs-md);
         color: var(--color-orange);
         font-weight: 600;
+       
     }
 
     &__text {
         font-size: var(--fs-sm);
+        line-height:  var(--lh-md);
     }
 
     &__button {
