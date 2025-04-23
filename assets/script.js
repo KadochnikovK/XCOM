@@ -92,6 +92,56 @@ document.addEventListener("DOMContentLoaded", function () {
     return true;
   }
 
+  function showModal(title, text, buttonText) {
+    
+    const modal = document.querySelector('.modal');
+    const modalWindow = modal.querySelector('.modal__window');
+    const modalHeadline = modal.querySelector('.modal__headline');
+    const modalText = modal.querySelector('.modal__text');
+    const modalButton = modal.querySelector('.modal__button');
+    const modalClose = modal.querySelector('.modal__close');
+  
+   
+    modalHeadline.textContent = title;
+    modalText.textContent = text;
+    modalButton.textContent = buttonText;
+  
+  
+    modal.style.display = 'flex';
+    
+    modalWindow.classList.add('animate__fadeInUp');
+    modal.classList.add('animate__fadeIn');
+ 
+    function closeModal() {
+  
+      modalWindow.classList.remove('animate__fadeInUp');
+      modalWindow.classList.add('animate__fadeOutDown');
+      modal.classList.remove('animate__fadeIn');
+      modal.classList.add('animate__fadeOut');
+    
+      setTimeout(() => {
+        modal.style.display = 'none';
+        modalWindow.classList.remove('animate__fadeOutDown');
+        modal.classList.remove('animate__fadeOut');
+        
+
+        modalHeadline.textContent = '';
+        modalText.textContent = '';
+        modalButton.textContent = '';
+      }, 500); 
+    }
+  
+
+    modalButton.addEventListener('click', closeModal);
+    modalClose.addEventListener('click', closeModal);
+    
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+  }
+
   form.addEventListener("submit", function (event) {
     event.preventDefault();
     clearErrors();
@@ -118,7 +168,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       console.log("Данные формы:", formData);
 
-      alert("Форма успешно отправлена!");
+      showModal("Данные успешно отправлены", "Мы свяжемся с вами в течение 10 минут", "Хорошо");
     }
   });
 
