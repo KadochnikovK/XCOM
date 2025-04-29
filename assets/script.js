@@ -93,49 +93,43 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function showModal(title, text, buttonText) {
-    
-    const modal = document.querySelector('.modal');
-    const modalWindow = modal.querySelector('.modal__window');
-    const modalHeadline = modal.querySelector('.modal__headline');
-    const modalText = modal.querySelector('.modal__text');
-    const modalButton = modal.querySelector('.modal__button');
-    const modalClose = modal.querySelector('.modal__close');
-  
-   
+    const modal = document.querySelector(".modal");
+    const modalWindow = modal.querySelector(".modal__window");
+    const modalHeadline = modal.querySelector(".modal__headline");
+    const modalText = modal.querySelector(".modal__text");
+    const modalButton = modal.querySelector(".modal__button");
+    const modalClose = modal.querySelector(".modal__close");
+
     modalHeadline.textContent = title;
     modalText.textContent = text;
     modalButton.textContent = buttonText;
-  
-  
-    modal.style.display = 'flex';
-    
-    modalWindow.classList.add('animate__fadeInUp');
-    modal.classList.add('animate__fadeIn');
- 
+
+    modal.style.display = "flex";
+
+    modalWindow.classList.add("animate__fadeInUp");
+    modal.classList.add("animate__fadeIn");
+
     function closeModal() {
-  
-      modalWindow.classList.remove('animate__fadeInUp');
-      modalWindow.classList.add('animate__fadeOutDown');
-      modal.classList.remove('animate__fadeIn');
-      modal.classList.add('animate__fadeOut');
-    
+      modalWindow.classList.remove("animate__fadeInUp");
+      modalWindow.classList.add("animate__fadeOutDown");
+      modal.classList.remove("animate__fadeIn");
+      modal.classList.add("animate__fadeOut");
+
       setTimeout(() => {
-        modal.style.display = 'none';
-        modalWindow.classList.remove('animate__fadeOutDown');
-        modal.classList.remove('animate__fadeOut');
-        
+        modal.style.display = "none";
+        modalWindow.classList.remove("animate__fadeOutDown");
+        modal.classList.remove("animate__fadeOut");
 
-        modalHeadline.textContent = '';
-        modalText.textContent = '';
-        modalButton.textContent = '';
-      }, 500); 
+        modalHeadline.textContent = "";
+        modalText.textContent = "";
+        modalButton.textContent = "";
+      }, 500);
     }
-  
 
-    modalButton.addEventListener('click', closeModal);
-    modalClose.addEventListener('click', closeModal);
-    
-    modal.addEventListener('click', (e) => {
+    modalButton.addEventListener("click", closeModal);
+    modalClose.addEventListener("click", closeModal);
+
+    modal.addEventListener("click", (e) => {
       if (e.target === modal) {
         closeModal();
       }
@@ -206,28 +200,27 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  const header = document.querySelector('header');
-  const main = document.querySelector('main');
-  
+  const header = document.querySelector("header");
+  const main = document.querySelector("main");
+
   if (header && main) {
-    const resizeObserver = new ResizeObserver(entries => {
+    const resizeObserver = new ResizeObserver((entries) => {
       for (let entry of entries) {
         main.style.marginTop = `${entry.target.offsetHeight}px`;
       }
     });
-  
+
     resizeObserver.observe(header);
   }
 
   const currentYear = new Date().getFullYear();
-    
-   
-    const copyrightText = `© 2018–${currentYear} X-Com. Все права защищены.`;
-    
-    const copyElement = document.getElementById('copy');
-    if (copyElement) {
-        copyElement.textContent = copyrightText;
-    } else {
-        console.warn('Элемент с id "copy" не найден на странице');
-    }
+
+  const copyrightText = `© 2018–${currentYear} X-Com. Все права защищены.`;
+
+  const copyElement = document.getElementById("copy");
+  if (copyElement) {
+    copyElement.textContent = copyrightText;
+  } else {
+    console.warn('Элемент с id "copy" не найден на странице');
+  }
 });
