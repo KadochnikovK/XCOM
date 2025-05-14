@@ -1,5 +1,5 @@
 @import "./css/normalize";
-@import "./css/root.scss";
+@import "./css/root";
 @import "./css/font";
 @import "./css/button";
 @import "./css/header";
@@ -12,6 +12,8 @@
 @import "./css/block";
 @import "./css/form";
 @import "./css/footer";
+@import "./css/modal";
+
 
 .swiper {
     width: 100%;
@@ -27,8 +29,7 @@
     align-items: center;
 }
 
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    object-fit: cover;
-}
+// .swiper-slide img {
+//     display: block;
+//     width: 100%;
+// }
